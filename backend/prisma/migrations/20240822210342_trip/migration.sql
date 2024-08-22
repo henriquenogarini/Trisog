@@ -7,7 +7,6 @@ CREATE TABLE "trips" (
     "days" INTEGER NOT NULL,
     "date" TEXT NOT NULL,
     "image" TEXT NOT NULL,
-    "extraImages" TEXT NOT NULL,
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 );

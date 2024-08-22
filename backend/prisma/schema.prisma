@@ -15,7 +15,6 @@ model Trip {
   days Int
   date String
   image String
-  extraImages String
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now())
 
