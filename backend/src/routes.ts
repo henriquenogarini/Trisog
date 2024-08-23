@@ -2,12 +2,14 @@ import { Router } from "express"
 import { TripController } from "./controllers/TripController"
 import { TypeController } from "./controllers/TypeController"
 import { TripTypeController } from "./controllers/TripTypeController"
+import { CommentsController } from "./controllers/CommentsController"
 
 const router = Router()
 
 const tripController = new TripController()
 const typeController = new TypeController()
 const triptypeController = new TripTypeController()
+const commentsController = new CommentsController()
 
 router.post("/trip", tripController.create)
 router.get("/trip", tripController.getAll)
@@ -26,6 +28,12 @@ router.get("/triptype", triptypeController.getAll)
 router.get("/triptype/:id", triptypeController.getById)
 router.put("/triptype/:id", triptypeController.update)
 router.delete("/triptype/:id", triptypeController.delete)
+
+router.post("/comments", commentsController.create)
+router.get("/comments", commentsController.getAll)
+router.get("/comments/:id", commentsController.getById)
+router.put("/comments/:id", commentsController.update)
+router.delete("/comments/:id", commentsController.delete)
 
 
 export default router
