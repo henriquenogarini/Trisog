@@ -5,7 +5,7 @@ CREATE TABLE "trips" (
     "location" TEXT NOT NULL,
     "price" INTEGER NOT NULL,
     "days" INTEGER NOT NULL,
-    "date" TEXT NOT NULL,
+    "start_date" TEXT NOT NULL,
     "image" TEXT NOT NULL,
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP

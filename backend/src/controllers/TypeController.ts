@@ -3,11 +3,11 @@ import prismaClient from "../database/prismaClient"
 
 export class TypeController {
     async create(req: Request, res: Response) {
-        const { type: typeName } = req.body
+        const { name_type } = req.body
 
         const type = await prismaClient.type.create({
             data: {
-                type: typeName
+                name_type
             }
         })
 
@@ -31,12 +31,12 @@ export class TypeController {
 
     async update(req: Request, res: Response) {
         const id = parseInt(req.params.id)
-        const { type: typeName } = req.body
+        const { name_type} = req.body
 
         const type = await prismaClient.type.update({
             where: { id },
             data: {
-                type: typeName
+                name_type
             }
         })
 

@@ -9,39 +9,30 @@ datasource db {
 
 model Trip {
   id Int @id @default(autoincrement())
+  id_type Int
+  type Type @relation(fields: [id_type], references: [id])
   destine String
   location String 
   price Int
   days Int
-  date String
+  start_date String
   image String
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now())
 
-  TripType TripType[]
-  Comments Comments[]
+  comments Comments[]
 
   @@map("trips")
 }
 
 model Type{
   id Int @id @default(autoincrement())
-  type String
+  name_type String
 
-  TripType TripType[]
+  trips Trip[]
 
   @@map("type")
 }
-
-model TripType{
-  id Int @id @default(autoincrement())
-  id_trip Int
-  trip Trip @relation(fields: [id_trip], references: [id])
-  id_type Int
-  type Type @relation(fields: [id_type], references: [id])
-
-  @@map("triptype")
-} 
 
 model Comments{
   id Int @id @default(autoincrement())
@@ -59,3 +50,4 @@ model Comments{
 
   @@map("comments")
 }
+

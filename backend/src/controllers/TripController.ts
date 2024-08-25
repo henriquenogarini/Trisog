@@ -3,15 +3,16 @@ import prismaClient from "../database/prismaClient"
 
 export class TripController {
     async create(req: Request, res: Response) {
-        const { destine, location, price, days, date, image} = req.body
+        const { id_type, destine, location, price, days, start_date, image} = req.body
 
         const trip = await prismaClient.trip.create({
             data: {
+                id_type,
                 destine,
                 location,
                 price,
                 days,
-                date,
+                start_date,
                 image
             }
         })
@@ -36,16 +37,17 @@ export class TripController {
 
     async update(req: Request, res: Response) {
         const id = parseInt(req.params.id)
-        const { destine, location, price, days, date, image} = req.body
+        const { destine, location, price, days, start_date, image, id_type} = req.body
 
         const trip = await prismaClient.trip.update({
             where: { id },
             data: {
+                id_type,
                 destine,
                 location,
                 price,
                 days,
-                date,
+                start_date,
                 image
             }
         })
