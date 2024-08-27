@@ -67,7 +67,11 @@
     list-style: none;
     display: flex;
 }
-  
+
+.activeLink {
+  color: #FC5056;
+}
+
 .navbarLinks li {
     margin-right: 2vw;
 }
@@ -81,6 +85,10 @@
   
 .navbarLinks a:hover {
     color: #FC5056;
+}
+
+.navbarLinks .activeLink{
+  color: #FC5056;
 }
 
 .searchIcon{

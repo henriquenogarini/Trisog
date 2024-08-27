@@ -44,16 +44,16 @@ const Header: React.FC = () => {
         <div className="navbarContainer">
           <div className="navbarLeft">
             <div className="logoNav">
-              <img src={logoUrl} alt="Logo Trisog" className="logoIcon" />
+              <a href="/"><img src={logoUrl} alt="Logo Trisog" className="logoIcon" /></a>
             </div>
             <ul className="navbarLinks">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/">About</Link></li>
-              <li><Link to="/tours">Tours</Link></li>
-              <li><Link to="/destination">Destination</Link></li>
-              <li><Link to="/">Blog</Link></li>
-              <li><Link to="/">Pages</Link></li>
-              <li><Link to="/">Contact</Link></li>
+              <li><Link to="/" className={location.pathname === "/" ? "activeLink" : ""}>Home</Link></li>
+              <li><Link to="/404 ">About</Link></li>
+              <li><Link to="/tours" className={location.pathname === "/tours" ? "activeLink" : ""}>Tours</Link></li>
+              <li><Link to="/404">Destination</Link></li>
+              <li><Link to="/404">Blog</Link></li>
+              <li><Link to="/404">Pages</Link></li>
+              <li><Link to="/404">Contact</Link></li>
             </ul>
           </div>
           <div className="navbarSearch">
