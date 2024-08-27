@@ -7,3 +7,47 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Trip {
+  id Int @id @default(autoincrement())
+  id_type Int
+  type Type @relation(fields: [id_type], references: [id])
+  destine String
+  location String 
+  price Int
+  days Int
+  start_date String
+  image String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+
+  comments Comments[]
+
+  @@map("trips")
+}
+
+model Type{
+  id Int @id @default(autoincrement())
+  name_type String
+
+  trips Trip[]
+
+  @@map("type")
+}
+
+model Comments{
+  id Int @id @default(autoincrement())
+  id_trip Int
+  trip Trip @relation(fields: [id_trip], references: [id])
+  name String
+  email String
+  description String
+  note_services Int
+  note_prices Int
+  note_locations Int
+  note_food Int
+  note_amenities Int
+  note_comfort Int
+
+  @@map("comments")
+}
+
