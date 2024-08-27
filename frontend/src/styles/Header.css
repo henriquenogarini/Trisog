@@ -1,0 +1,110 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1.35vh 1.25vw;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbarLeft{
+  display: flex;
+  align-items: center;
+}
+
+.logoNav {
+  display: flex;
+  align-items: center;
+}
+
+.logoIcon {
+  width: 14.9vh;
+  height: 2vw;
+  margin-right: 4.375vw;
+  margin-left: 1.9vw;
+}
+
+.navbarLinks {
+    list-style: none;
+    display: flex;
+}
+  
+.navbarLinks li {
+    margin-right: 2vw;
+}
+  
+.navbarLinks a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+  
+.navbarLinks a:hover {
+    color: #FC5056;
+}
+
+.searchIcon{
+    align-items: center;
+    display: flex;
+    height: 3.2vh;
+    width: 1.5vw;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-right: 0.6vw;
+}
+
+.navbarSearch {
+    display: flex;
+    align-items: center;
+    margin-left: 3.1vw;
+}
+  
+.searchContainer {
+    display: none;
+    position: relative;
+}
+  
+.searchContainer.open {
+    display: inline-block;
+}
+  
+.searchInput {
+    padding: 0.6vh 0.6vw;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 12.5vw;
+    transition: 0.3s;
+}
+
+.userIcon {
+    height: 2.80vh;
+    width: 1.5vw;
+    margin-right: 0.6vw;
+  }
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 1.9vw;
+}
+
+.loginLink {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.loginLink:hover {
+  color: #FC5056;
+}
