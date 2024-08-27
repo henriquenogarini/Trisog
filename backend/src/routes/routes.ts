@@ -1,7 +1,7 @@
 import { Router } from "express"
-import { TripController } from "./controllers/TripController"
-import { TypeController } from "./controllers/TypeController"
-import { CommentsController } from "./controllers/CommentsController"
+import { TripController } from "../controllers/TripController"
+import { TypeController } from "../controllers/TypeController"
+import { CommentsController } from "../controllers/CommentsController"
 
 const router = Router()
 
