@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import "../styles/Header.css";
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import "../styles/Header.css"
 
 const Header: React.FC = () => {
-  const [search, setSearch] = useState(false);
+  const [search, setSearch] = useState(false)
 
   const logoUrl =
-    "https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Header_Images%2FLogo_Trisog.png?alt=media&token=c0fe5c09-d59c-473a-bd3e-38f7408d0c93";
+    "https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Header_Images%2FLogo_Trisog.png?alt=media&token=c0fe5c09-d59c-473a-bd3e-38f7408d0c93"
   const userIconUrl =
-    "https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Header_Images%2FBonequinho_Login.png?alt=media&token=47586099-8e27-40a7-959e-7ce912f3613f";
+    "https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Header_Images%2FBonequinho_Login.png?alt=media&token=47586099-8e27-40a7-959e-7ce912f3613f"
   const searchIcon =
-    "https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Header_Images%2FLupa_Search.png?alt=media&token=f70352cd-371a-4326-a07f-734dc7d06fac";
+    "https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Header_Images%2FLupa_Search.png?alt=media&token=f70352cd-371a-4326-a07f-734dc7d06fac"
   const twitterIcon = 
     "https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Header_Images%2FTwitter_Icon.png?alt=media&token=e2ab4e1b-24f5-4303-804b-b0900e226e87"
   const linkedinIcon = 
@@ -80,7 +80,7 @@ const Header: React.FC = () => {
         </div>
       </nav>
     </>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
