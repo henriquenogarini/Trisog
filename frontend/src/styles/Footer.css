@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.footer {
+  background-color: #111111;
+  color: white;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 4px solid #FC5056;
+  box-sizing: border-box;
+  margin-top: auto;
+  padding: 80px 128px 120px 128px;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.firstFooterContainer {
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid #ccc;
+  padding-right: 76px;
+  width: 209px;
+}
+
+.logoFooter {
+  margin-bottom: 32px;
+}
+
+.firstFooter .p1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.firstFooter h1 {
+  font-family: "Work Sans";
+  font-size: 18px;
+  margin-bottom: 21px;
+}
+
+.firstFooter .p2 {
+  font-family: "Work Sans";
+  font-size: 14px;
+}
+
+.firstFooter .p3 {
+  font-family: "Work Sans";
+  font-size: 14px;
+  margin-bottom: 21px;
+}
+
+.firstFooter span{
+  color: #FC5056;
+}
+
+.imagesFirstFooter {
+  display: flex;
+  gap: 15px;
+}
+
+.imagesFirstFooter img {
+  width: 20px;
+  height: 20px;
+}
+
+.footerLinks {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  border-right: 2px solid #ccc; 
+  padding-left: 76px;
+  padding-top: 30px;
+  width: 405px;
+}
+
+.companyLinks li{
+  font-family: "Work Sans";
+  text-decoration: none;
+  color: white;
+}
+
+.destinationsLinks1{
+  font-family: "Work Sans";
+}
+
+.destinationsLinks2{
+  font-family: "Work Sans";
+  padding-top: 30px;
+  margin-right: 76px;
+}
+
+.footerLinks .p1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.footerLinks ul {
+  list-style: none;
+}
+
+.footerLinks li {
+  font-family: "Work Sans";
+  color: white;
+  text-decoration: none;
+  margin-bottom: 14px;
+}
+
+.footerLinks li a {
+  font-family: "Work Sans";
+  color: white;
+  text-decoration: none;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 14px;
+  margin-left: 76px;
+}
+
+.newsletter .p1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 14px;
+  margin-bottom: 14px;
+  width: 236px;
+}
+
+.emailInput {
+  font-family: "Work Sans";
+  height: 40px;
+  width: 236px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+.emailSubmit {
+  font-family: "Work Sans";
+  padding: 10px;
+  background-color: #FC5056;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 106px;
+  border-radius: 8px;
+}
+
+.rightReserved {
+  font-family: "Work Sans";
+  font-size: 14px;
+  margin-top: 32px;
+}
