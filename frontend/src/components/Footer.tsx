@@ -1,16 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import "../styles/Footer.css";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import "../styles/Footer.css"
 
 const Footer: React.FC = () => {
   const logoFooter = 
-    "https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Header_Images%2FLogo_Trisog_White.png?alt=media&token=7f17cedf-c818-438a-9fe1-bb7a934d6db4";
+    "https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Header_Images%2FLogo_Trisog_White.png?alt=media&token=7f17cedf-c818-438a-9fe1-bb7a934d6db4"
   const facebook = 
-    "https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Header_Images%2FFacebook.png?alt=media&token=cc1d8d3a-2f75-41de-969c-c3da9d8a762d";
+    "https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Header_Images%2FFacebook.png?alt=media&token=cc1d8d3a-2f75-41de-969c-c3da9d8a762d"
   const twitter = 
-    "https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Header_Images%2FTwitter.png?alt=media&token=3112c64b-b199-44d5-b83a-24abf224d02c";
+    "https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Header_Images%2FTwitter.png?alt=media&token=3112c64b-b199-44d5-b83a-24abf224d02c"
   const linkedin = 
-    "https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Header_Images%2FLinkedIn.png?alt=media&token=d12fb7a9-43e8-442f-81b5-cf6261f32118";
+    "https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Header_Images%2FLinkedIn.png?alt=media&token=d12fb7a9-43e8-442f-81b5-cf6261f32118"
 
   return (
     <footer className="footer">
@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
