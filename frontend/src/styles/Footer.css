@@ -10,8 +10,9 @@
   justify-content: center;
   border-bottom: 4px solid #FC5056;
   box-sizing: border-box;
-  margin-top: auto;
-  padding: 80px 128px 120px 128px;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  margin-top: 220px;
 }
 
 .footerContainer {
@@ -24,13 +25,17 @@
 .firstFooterContainer {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   border-right: 2px solid #ccc;
   padding-right: 76px;
   width: 209px;
+  padding-left: 200px;
 }
 
 .logoFooter {
   margin-bottom: 32px;
+  padding: 0;
+  display: block;
 }
 
 .firstFooter .p1 {
@@ -132,7 +137,6 @@
   font-family: "Kaushan Script", cursive;
   font-size: 14px;
   margin-bottom: 14px;
-  width: 236px;
 }
 
 .emailInput {
