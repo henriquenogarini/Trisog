@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Home_Images%2FimageHome.png?alt=media&token=145dfa03-43ce-4ebb-beae-d2663eb9403f);
-    background-repeat: no-repeat;
-    background-position: absolute;
-    background-size: cover;
+.background{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
 }
 
 .textContainer{
     text-align: center;
-    margin-top: 200px
+    margin-top: 200px;
 }
 
 .p1 {
