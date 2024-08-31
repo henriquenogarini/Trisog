@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.titleContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleRed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kaushan Script", cursive;
+    font-size: 24px;
+    color: #FC5056;
+    margin-bottom: 10px;
+}
+
+
+.titleRed::before,
+.titleRed::after {
+    content: "";
+    width: 131px;
+    height: 1px;
+    background-color: #A9AFBB;
+    display: block;
+    margin: 0 10px;
+}
+
+.titleDesc{
+    font-family: "Work Sans";
+    font-size: 48px;
+    color: black;
+    font-weight: bold;
+}

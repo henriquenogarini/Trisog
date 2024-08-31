@@ -1,6 +1,7 @@
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import SearchBar from '../components/SearchBar'
+import Title from '../components/Title'
 import "../styles/Home.css"
 
 const Home = () => {
@@ -29,6 +30,9 @@ const Home = () => {
         <p className="pInformations">Travelers</p>
         <h2 className="hNumbers">7k+</h2>
         <p className="pInformations">Positive Reviews</p>
+    </div>
+    <div>
+      <Title text1="Destination" text2="Top Attractions Destinations"/>
     </div>
     <Footer/>
     </div>
