@@ -3,10 +3,15 @@ import "../styles/SearchBar.css"
 
 const SearchBar: React.FC = () => {
 
-    const [destine, setDestine] = useState<string>("")
+    const [destiny, setDestiny] = useState<string>("")
     const [typeSelect, setTypeSelect] = useState<string>("")
     const [dataSelect, setDataSelect] = useState<string>("")
+    const [guests, setGuests] = useState<string>("")
 
+    const handleDestination = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setDestiny(e.target.value)
+    }
+    
     const handleTypeSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
         setTypeSelect(e.target.value)
     }
@@ -15,8 +20,8 @@ const SearchBar: React.FC = () => {
         setDataSelect(e.target.value)
     }
 
-    const handleDestination = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setDestine(e.target.value)
+    const handleGuestsAmount = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        setGuests(e.target.value)
     }
 
   return (
@@ -26,7 +31,7 @@ const SearchBar: React.FC = () => {
             <label htmlFor="destination">Destination</label>
             <input 
             type="text" 
-            placeholder="Write your destine..."
+            placeholder="Write your destiny..."
             onChange={handleDestination}
             className="destiny"
             />
@@ -59,16 +64,17 @@ const SearchBar: React.FC = () => {
              />
              </div>
              <div>
-            <label htmlFor="destination">Guests</label>
+            <label htmlFor="guestsn">Guests</label>
             <select
              className="guests"
-             value={1}
+             value={guests}
+             onChange={handleGuestsAmount}
              >
-             <option>1</option>
-             <option>2</option>
-             <option>3</option>
-             <option>4</option>
-             <option>4+</option>
+             <option value={1}>1</option>
+             <option value={2}>2</option>
+             <option value={3}>3</option>
+             <option value={4}>4</option>
+             <option value={5}>4+</option>
              </select>
              </div>
              <button className="searchButton">Search</button>

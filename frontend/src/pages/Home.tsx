@@ -20,6 +20,16 @@ const Home = () => {
     <div>
       <SearchBar />
     </div>
+    <div className="informationsContainer">
+        <h2 className="hNumbers">120+</h2>
+        <p className="pInformations">Total Destination</p>
+        <h2 className="hNumbers">500+</h2>
+        <p className="pInformations">Travel Package</p>
+        <h2 className="hNumbers">12k+</h2>
+        <p className="pInformations">Travelers</p>
+        <h2 className="hNumbers">7k+</h2>
+        <p className="pInformations">Positive Reviews</p>
+    </div>
     <Footer/>
     </div>
   )
