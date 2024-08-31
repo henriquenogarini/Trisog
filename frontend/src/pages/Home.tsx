@@ -21,6 +21,9 @@ const Home = () => {
     <div>
       <SearchBar />
     </div>
+    <div>
+      <Title text1="Tours" text2="Most Popular Tours"/>
+    </div>
     <div className="informationsContainer">
         <h2 className="hNumbers">120+</h2>
         <p className="pInformations">Total Destination</p>
@@ -31,8 +34,34 @@ const Home = () => {
         <h2 className="hNumbers">7k+</h2>
         <p className="pInformations">Positive Reviews</p>
     </div>
+    <div className="destinationContainer">
     <div>
       <Title text1="Destination" text2="Top Attractions Destinations"/>
+    </div>
+    </div>
+    <div className="chooseUsContainer">
+      <div className="chooseUsLeft">
+      <img src="https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Home_Images%2FchooseUsImage.png?alt=media&token=79c91a75-d6c0-4f7b-8d7c-4a9d64c4f945" alt="chooseUs" />
+      </div>
+      <div className="chooseUsRight">
+        <p className="chooseP1">Why Choose Us</p>
+        <p className="chooseP2">Our Experiences Meet High Quality Standarts</p>
+        <p className="chooseP3">Holisticly optimize proactive strategic theme areas rather than effective manufactured products create.</p>
+        <div className="checks">
+        <img src="https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Home_Images%2FcheckImage.png?alt=media&token=fa5dfe60-a436-4a4b-a063-8a951034705a" alt="check" className="checkImg"/>
+        <p>Cheap Rates</p>
+        <img src="https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Home_Images%2FcheckImage.png?alt=media&token=fa5dfe60-a436-4a4b-a063-8a951034705a" alt="check" className="checkImg" />
+        <p>Cheap Rates</p>
+        <img src="https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Home_Images%2FcheckImage.png?alt=media&token=fa5dfe60-a436-4a4b-a063-8a951034705a" alt="check"className="checkImg" />
+        <p>Hand-picked Tour</p>
+        <img src="https://firebasestorage.googleapis.com/v0/b/travelling-c5077.appspot.com/o/Home_Images%2FcheckImage.png?alt=media&token=fa5dfe60-a436-4a4b-a063-8a951034705a" alt="check" className="checkImg" />
+        <p>Private Guide</p>
+        </div>
+        <button className="contactUsButton">Contact Us</button>
+      </div>
+      <div>
+    </div>
+
     </div>
     <Footer/>
     </div>
