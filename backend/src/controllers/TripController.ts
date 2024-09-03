@@ -1,6 +1,14 @@
 import { Request, Response } from "express"
 import prismaClient from "../database/prismaClient"
+import tripService from "../services/tripService"
 
+export const getTrips = async (req: Request, res: Response) => {
+    try {
+        const trips = await tripService.fetchTrips()
+    } catch (error) {
+        res.status(500).json({ error: "Error when searching for trips" })
+    }
+}
 export class TripController {
     async create(req: Request, res: Response) {
         const { id_type, destine, location, price, days, start_date, image} = req.body

@@ -1,5 +1,5 @@
 import { Router } from "express"
-import { TripController } from "../controllers/TripController"
+import { getTrips, TripController } from "../controllers/TripController"
 import { TypeController } from "../controllers/TypeController"
 import { CommentsController } from "../controllers/CommentsController"
 
@@ -9,6 +9,7 @@ const tripController = new TripController()
 const typeController = new TypeController()
 const commentsController = new CommentsController()
 
+router.get("/cards", getTrips)
 router.post("/trip", tripController.create)
 router.get("/trip", tripController.getAll)
 router.get("/trip/:id", tripController.getById)
