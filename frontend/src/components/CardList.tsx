@@ -47,7 +47,6 @@ import "../styles/Cards.css"
     )
   }
 
-
   const CardsList: React.FC = () => {
     const [cards, setCards] = useState<CardProps[]>([])
   
