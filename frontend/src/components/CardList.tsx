@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 import "../styles/Cards.css"
 
   type CardProps = {
@@ -29,13 +29,13 @@ import "../styles/Cards.css"
         <h3 className="cardDestiny">{destiny}</h3>
         <div className="cardReview">
           <div className="averageReview">
-            <img src="/path-to-star-icon.png" alt="Star Icon" className="starIcon" />
+            <img src="/" alt="Star Icon" className="starIcon" />
             <span className="averageReviewValue">{averageReview.toFixed(1)}</span>
           </div>
           <span className="reviewCount">{reviewCount} reviews</span>
           <div className="tourDays">
-            <img src="/path-to-days-icon.png" alt="Days Icon" className="daysIcon" />
-            <span>{tourDays} days</span>
+            <img src="/" alt="Days Icon" className="daysIcon" />
+            <span>{tourDays}days</span>
           </div>
         </div>
         <div className="cardFooter">
@@ -44,8 +44,8 @@ import "../styles/Cards.css"
         </div>
       </div>
     </div>
-    );
-  };
+    )
+  }
 
 
   const CardsList: React.FC = () => {
@@ -65,12 +65,12 @@ import "../styles/Cards.css"
     }, [])
   
     return (
-      <div className="cards-list">
+      <div className="cardsList">
         {cards.map((card, index) => (
           <Card key={index} {...card} />
         ))}
       </div>
-    );
-  };
+    )
+  }
   
   export default CardsList

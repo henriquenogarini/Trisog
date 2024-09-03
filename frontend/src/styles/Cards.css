@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 .card {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -14,26 +17,30 @@
   }
   
   .cardDetails {
+    font-family: "Work Sans";
     padding: 16px;
     display: flex;
     flex-direction: column;
   }
   
   .cardLocation, .cardDestiny {
+    font-family: "Work Sans";
     margin: 0;
   }
   
   .cardReview{
+    font-family: "Work Sans";
     display: flex;
     align-items: center;
     margin: 8px 0;
   }
   
   .averageReview {
+    font-family: "Work Sans";
     display: flex;
     align-items: center;
     margin-right: auto;
-    background-color: red;
+    background-color: #FC5056;
     padding: 4px 8px;
     border-radius: 4px;
     color: white;
@@ -46,14 +53,16 @@
   }
   
   .averageReviewValue {
-    font-weight: bold;
+    font-family: "Work Sans";
   }
   
   .reviewCount {
+    font-family: "Work Sans";
     margin-left: 16px;
   }
   
   .tourDays {
+    font-family: "Work Sans";
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -66,11 +75,13 @@
   }
   
   .cardFooter {
+    font-family: "Work Sans";
     display: flex;
     justify-content: space-between;
     margin-top: 16px;
   }
   
   .minPrice {
+    font-family: "Kaushan Script", cursive;
     font-weight: bold;
   }
