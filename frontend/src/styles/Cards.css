@@ -1,0 +1,76 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardImage {
+    width: 100%;
+    height: auto;
+  }
+  
+  .cardDetails {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cardLocation, .cardDestiny {
+    margin: 0;
+  }
+  
+  .cardReview{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+  }
+  
+  .averageReview {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    background-color: red;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: white;
+  }
+  
+  .starIcon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+  
+  .averageReviewValue {
+    font-weight: bold;
+  }
+  
+  .reviewCount {
+    margin-left: 16px;
+  }
+  
+  .tourDays {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .daysIcon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+  
+  .cardFooter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  
+  .minPrice {
+    font-weight: bold;
+  }

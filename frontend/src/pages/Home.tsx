@@ -1,3 +1,4 @@
+import CardsList from '../components/CardList'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import SearchBar from '../components/SearchBar'
@@ -61,7 +62,7 @@ const Home = () => {
       </div>
       <div>
     </div>
-
+    <CardsList/>
     </div>
     <Footer/>
     </div>
